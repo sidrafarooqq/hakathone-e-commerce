@@ -2,10 +2,22 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 function ContactPage() {
   return (
     <div className="bg-gray-100 min-h-screen">
+      <div> 
+                  <Image
+                              src="/Group 78-2.svg"
+                              alt="pic"
+                              width={1700}
+                              height={350}
+                              className="w-270 h-332 object-cover "
+                            />
+                            
+            
+                  </div>
       <div className="container mx-auto py-12 px-4">
         
         <div className="text-center mb-12 pt-20">
@@ -101,37 +113,37 @@ function ContactPage() {
         </div>
 
        
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6">
-          <div className="flex items-center space-x-4">
-            <div className="text-yellow-500 text-3xl">🏆</div>
-            <div>
-              <h4 className="text-lg font-bold">High Quality</h4>
-              <p className="text-gray-600 text-sm">Crafted from top materials</p>
-            </div>
-          </div>
-          <div className="flex items-center space-x-4">
-            <div className="text-yellow-500 text-3xl">🔒</div>
-            <div>
-              <h4 className="text-lg font-bold">Warranty Protection</h4>
-              <p className="text-gray-600 text-sm">Over 2 years</p>
-            </div>
-          </div>
-          <div className="flex items-center space-x-4">
-            <div className="text-yellow-500 text-3xl">🚚</div>
-            <div>
-              <h4 className="text-lg font-bold">Free Shipping</h4>
-              <p className="text-gray-600 text-sm">Order over $150</p>
-            </div>
-          </div>
-          <div className="flex items-center space-x-4">
-            <div className="text-yellow-500 text-3xl">🕒</div>
-            <div>
-              <h4 className="text-lg font-bold">24/7 Support</h4>
-              <p className="text-gray-600 text-sm">Dedicated support</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6 pl-24 bg-[#F9F1E7] h-36">
+                  <div className="flex items-center space-x-4">
+                    <div className="text-yellow-500 text-3xl"><Image src="/trophy 1.svg" alt="trophy" height={60} width={60}/></div>
+                    <div>
+                      <h4 className="text-lg font-bold">High Quality</h4>
+                      <p className="text-gray-600 text-sm">Crafted from top materials</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <div className="text-yellow-500 text-3xl"> <Image src="/guarantee.svg" alt="trophy" height={60} width={60}/></div>
+                    <div>
+                      <h4 className="text-lg font-bold">Warranty Protection</h4>
+                      <p className="text-gray-600 text-sm">Over 2 years</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <div className="text-yellow-500 text-3xl"> <Image src="/shipping.svg" alt="trophy" height={60} width={60}/></div>
+                    <div>
+                      <h4 className="text-lg font-bold">Free Shipping</h4>
+                      <p className="text-gray-600 text-sm">Order over $150</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <div className="text-yellow-500 text-3xl"><Image src="/customer-support.svg" alt="trophy" height={60} width={60}/></div>
+                    <div>
+                      <h4 className="text-lg font-bold">24/7 Support</h4>
+                      <p className="text-gray-600 text-sm">Dedicated support</p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
     </div>
   );
 }

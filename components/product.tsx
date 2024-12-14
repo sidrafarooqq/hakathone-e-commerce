@@ -104,7 +104,7 @@ const Products = () => {
                <p className="text-gray-500 font-bold line-through">{product.oldprice}</p> 
                
                 
-                <button className="mt-2 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">
+                <button className="mt-2 w-full bg-white text-[#B88E2F] border border-[#B88E2F] py-2 rounded hover:bg-gray-800 transition">
                   Add to Cart
                 </button>
               </div>
