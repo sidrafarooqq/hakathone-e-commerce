@@ -2,11 +2,11 @@
 import { use } from "react";
 import Image from "next/image";
 import productsdetail from "@/data/products";
-import { useCart } from "@/app/context/page";
+
 
 const ProductDetailPage = ({ params }: { params: Promise<{ id: string }> }) => {
     const resolvedParams = use(params);
-    const { addToCart } = useCart(); 
+  
     const prod = productsdetail.find((p) => p.id === resolvedParams.id);
 
     if (!prod) {
@@ -14,7 +14,7 @@ const ProductDetailPage = ({ params }: { params: Promise<{ id: string }> }) => {
     }
 
     const handleAddToCart = () => {
-        addToCart(prod); 
+      
         alert(`${prod.name} has been added to your cart!`);
     };
 
